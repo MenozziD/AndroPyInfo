@@ -123,11 +123,8 @@ def LocationInfo():
    n = loc['gps'] 
   except KeyError:
    n = loc['network']
-   #print n
    la = n['latitude']
-   	#print la
    lo = n['longitude']
-   #print lo
    address =str(la)+'/'+str(lo)
    
  droid.stopLocating()
